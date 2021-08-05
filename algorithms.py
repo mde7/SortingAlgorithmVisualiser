@@ -27,5 +27,5 @@ class BubbleSort(Algorithm):
             for u in range(len(self.array) - i - 1):
                 if self.array[u] > self.array[u + 1]:
                     self.array[u], self.array[u + 1] = self.array[u + 1], self.array[u]
-            self.draw_window(self.array[u], self.array[u + 1])
+                self.draw_window(self.array[u], self.array[u + 1])
 
