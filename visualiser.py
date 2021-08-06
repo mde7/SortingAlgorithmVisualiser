@@ -7,7 +7,8 @@ import pygame
 ##############
 
 algorithms = {
-    "Bubble Sort": algo.BubbleSort()
+    "SelectionSort" : algo.SelectionSort(),
+    "BubbleSort": algo.BubbleSort()
 }
 
 #################

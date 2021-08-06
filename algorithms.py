@@ -20,10 +20,23 @@ class Algorithm:
     def algorithm(self):
         pass
 
+class SelectionSort(Algorithm):
+    def __init__(self, name):
+        super().__init__("SelectionSort")
+    
+    def algorithm(self):
+        for i in range(len(self.array)):
+            min_index = i
+            for u in range(i+1, len(self.array)):
+                if self.array[i] > self.array[u]:
+                    min_index = u
+            self.array[i], self.array[min_index] = self.array[min_index], self.array[i]
+            self.draw_window(self.array[i], self.array[min_index])
+
 
 class BubbleSort(Algorithm):
     def __init__(self):
-        super().__init__("Bubble Sort")
+        super().__init__("BubbleSort")
 
     def algorithm(self):
         for i in range(len(self.array)):
